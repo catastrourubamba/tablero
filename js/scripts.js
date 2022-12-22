@@ -135,7 +135,7 @@ barChart.render();
 
 
 
-
+/*
 // BAR CHART UNIDADES
 var barChartOptions = {
   series: [{
@@ -593,3 +593,4 @@ var barChartOptions = {
 
 var barChart = new ApexCharts(document.querySelector("#areacu-chart"), barChartOptions);
 barChart.render();
+*/
