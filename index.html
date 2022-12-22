@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tablero de Control</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">menu</span> Catastro
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="https://busquedas.elperuano.pe/normaslegales/declaran-como-zona-catastrada-a-los-sectores-catastrales-ur-resolucion-de-alcaldia-no-261-2022-mpua-2131603-1/"><span class="material-icons-outlined">book</span></a>Publicación Diario el Peruano
+
+          </li>
+          <li class="sidebar-list-item">
+            <a href="https://drive.google.com/file/d/16JfVHAae89GsZnORAucQOMj9k3Ee264Z/view?usp=share_link"><span class="material-icons-outlined">book</span></a>Resolucion de Zona Catastrada
+
+          </li>
+
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>Tablero de Control - Catastro - Fecha (21/12/2022)</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Sectores</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>10</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Lotes</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>3964</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Edificas</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>1007</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Actividades Economicas</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>1722</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Desocupadas</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>395</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total de Puertas</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>9651</h1>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Area Verdes</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>14</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Lotes - Zona Catastrada Sectores (04, 06, 07, 08, 11)</h2>
+            <div id="bar-chart"></div>
+          </div>
+          
+          <div class="charts-card">
+            <h2 class="chart-title">Unidades - Zona Catastrada Sectores (04, 06, 07, 08, 11)</h2>
+            <div id="area-chart"></div>
+          </div>
+
+
+        </div>
+        <div class="charts-card">
+          <h2 class="chart-title">Componente Urbano Sectores (04, 06, 07, 08, 11, 12, 13)</h2>
+          <div id="areacu-chart"></div>
+        </div>
+
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
